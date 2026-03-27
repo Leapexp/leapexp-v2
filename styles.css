@@ -90,7 +90,7 @@ a:hover {
   border-radius: 999px;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
 
-  height: 56px;        /* barra fina (aprox "original") */
+  height: 50px;        /* barra fina (aprox "original") */
   padding: 0 20px;     /* IMPORTANT: sense padding vertical */
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@ a:hover {
 
 /* Logo */
 .brand-logo {
-  height: 46px;        /* gran però sense engruixir la barra */
+  height: 44px;        /* gran però sense engruixir la barra */
   width: auto;
   display: block;
 }
