@@ -105,7 +105,7 @@ a:hover {
 }
 
 .brand-logo {
-  height: 22px;
+  height: 77px; /* 22 * 3.5 = 77 */
   width: auto;
   display: block;
 }
