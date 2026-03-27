@@ -21,7 +21,7 @@
         <a href="sobre-nosotros.html">Sobre nosotros</a>
         <a href="blog.html">Blog</a>
       </nav>
-      <a href="index.html#contacto">Contacto</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
     </div>
 
     <!-- Versión MÓVIL con menú hamburguesa -->
@@ -31,15 +31,14 @@
           <img class="brand-logo" src="logo.png" alt="Leap" />
         </a>
         <button
-  class="mobile-menu-toggle"
-  aria-label="Abrir menú"
-  onclick="document.querySelector('.mobile-header').classList.toggle('menu-open')"
->
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-      
+          class="mobile-menu-toggle"
+          aria-label="Abrir menú"
+          onclick="document.querySelector('.mobile-header').classList.toggle('menu-open')"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
 
       <nav class="mobile-menu" aria-label="Menú principal móvil">
@@ -48,14 +47,13 @@
         <a href="destinos.html">Destinos</a>
         <a href="sobre-nosotros.html">Sobre nosotros</a>
         <a href="blog.html">Blog</a>
-        <a href="index.html#contacto">Contacto</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </div>
   </header>
 
   <!-- HERO con vídeo de fondo -->
   <section id="inicio" class="hero">
-    <!-- vídeo: cuando tengamos el archivo real, solo cambia "WEB LEAP VIDEO (1).mp4" -->
     <video class="hero-video" autoplay muted loop playsinline>
       <source src="WEB LEAP VIDEO (1).mp4" type="video/mp4" />
       Tu navegador no soporta video en HTML5.
@@ -75,7 +73,6 @@
   </section>
 
   <main>
-    <!-- PROGRAMAS (teaser) -->
     <section id="programas" class="section section-alt">
       <div class="section-inner">
         <h2>Programas</h2>
@@ -86,7 +83,6 @@
       </div>
     </section>
 
-    <!-- DESTINOS (teaser) -->
     <section id="destinos" class="section">
       <div class="section-inner">
         <h2>Destinos</h2>
@@ -98,7 +94,6 @@
       </div>
     </section>
 
-    <!-- SOBRE NOSOTROS (teaser) -->
     <section id="sobre-nosotros" class="section section-alt">
       <div class="section-inner">
         <h2>Sobre nosotros</h2>
@@ -135,15 +130,13 @@
     </section>
   </main>
 
-  <!-- (Opcional) footer sencillo -->
   <footer class="site-footer">
     <div class="section-inner">
       <p>© <span id="year"></span> Leap. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <!-- Script menú hamburguesa + año footer -->
-   <script>
+  <script>
     const yearSpan = document.getElementById('year');
     if (yearSpan) {
       yearSpan.textContent = new Date().getFullYear();
