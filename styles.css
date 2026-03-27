@@ -436,13 +436,3 @@ main {
   width: auto;
   display: block;
 }
-
-.brand-logo { 
-  height: 90px !important; 
-  outline: 2px solid red; 
-  background: rgba(255,0,0,.08);
-}
-
-.brand-logo {
-  border: 6px solid red !important;
-}
