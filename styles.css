@@ -432,7 +432,7 @@ main {
 }
 
 .brand-logo {
-  height: 80px;          /* posa aquí la mida que vulguis (46, 60, etc.) */
+  height: 100px;          /* posa aquí la mida que vulguis (46, 60, etc.) */
   width: auto;
   display: block;
 }
