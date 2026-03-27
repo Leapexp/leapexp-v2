@@ -423,16 +423,3 @@ main {
     border-radius: 28px;
     padding: 30px 24px 34px;
   }
-}
-
-/* === Force logo size without increasing navbar height === */
-.nav-shell .brand {
-  height: auto;          /* deixa de limitar-se a l'alçada de la barra */
-  align-items: center;
-}
-
-.brand-logo {
-  height: 100px;          /* posa aquí la mida que vulguis (46, 60, etc.) */
-  width: auto;
-  display: block;
-}
