@@ -1,0 +1,428 @@
+/* ============================
+   RESET BÁSICO
+   ============================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  color: #0f172a;
+  background: #e5e7f0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ============================
+   LINKS Y BOTONES
+   ============================ */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn-primary,
+.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #16a34a;
+  color: #ffffff;
+  box-shadow: 0 18px 40px rgba(22, 163, 74, 0.4);
+}
+
+.btn-primary:hover {
+  filter: brightness(1.05);
+}
+
+.btn-ghost {
+  border: 2px solid #020617;
+  color: #020617;
+  background: transparent;
+}
+
+.btn-ghost:hover {
+  background: #020617;
+  color: #ffffff;
+}
+
+/* ============================
+   CABECERA / NAV ESCRITORIO
+   ============================ */
+
+.site-header {
+  position: fixed;
+  top: 16px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 0 20px;
+}
+
+.nav-shell {
+  max-width: 1120px;
+  margin: 0 auto;
+  background: #f5f7ff;
+  border-radius: 999px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.25);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-shell .brand {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  color: #020617;
+  text-decoration: none;
+}
+
+.brand-logo {
+  height: 22px;
+  width: auto;
+  display: block;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.nav a {
+  font-size: 14px;
+  color: #020617;
+  opacity: 0.8;
+}
+
+.nav a:hover {
+  opacity: 1;
+}
+
+.nav-cta {
+  background: #020617;
+  color: #ffffff;
+  border-radius: 999px;
+  padding: 10px 26px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* ============================
+   HERO CON VÍDEO
+   ============================ */
+
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+  padding: 170px 20px 80px;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 23, 42, 0.75),
+    rgba(15, 23, 42, 0.9)
+  );
+  z-index: -1;
+}
+
+.hero-content {
+  max-width: 720px;
+}
+
+.kicker {
+  letter-spacing: 0.16em;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.85;
+  margin-bottom: 12px;
+}
+
+.hero h1 {
+  margin: 0 0 16px;
+  font-size: 46px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 28px;
+}
+
+/* ============================
+   SECCIONES HOME (PROGRAMAS, DESTINOS, SOBRE...)
+   ============================ */
+
+main {
+  margin-top: 0;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.section-alt {
+  /* fondo diferente muy suave */
+}
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #f9fafb;
+  border-radius: 32px;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+  padding: 40px 32px 44px;
+}
+
+.section h2 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+.section-lead {
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+/* ============================
+   FORMULARIO CONTACTO
+   ============================ */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 560px;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.form-row input,
+.form-row textarea {
+  border-radius: 14px;
+  border: 1px solid #cbd5e1;
+  padding: 10px 12px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+/* ============================
+   FOOTER
+   ============================ */
+
+.site-footer {
+  padding: 30px 20px 40px;
+}
+
+.site-footer .section-inner {
+  background: transparent;
+  box-shadow: none;
+  text-align: center;
+  padding: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* ============================
+   MENÚ MÓVIL (HAMBURGUESA)
+   ============================ */
+
+/* Por defecto, ocultamos cabecera móvil y menú */
+.mobile-header {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+/* VERSIÓN MÓVIL / TABLET PEQUEÑA */
+@media (max-width: 768px) {
+  /* Ocultar cabecera escritorio */
+  .desktop-header {
+    display: none;
+  }
+
+  /* Mostrar cabecera móvil */
+  .mobile-header {
+    display: block;
+    position: fixed;
+    top: 16px;
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    z-index: 1000;
+  }
+
+  .mobile-header-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f5f7ff;
+    border-radius: 999px;
+    padding: 10px 18px;
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.25);
+  }
+
+  .mobile-header .brand {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 20px;
+    color: #020617;
+    text-decoration: none;
+  }
+
+  .mobile-header .brand .brand-logo {
+    height: 20px;
+  }
+
+  /* Botón hamburguesa redondo */
+ /* Botón hamburguesa (móvil) */
+.mobile-menu-toggle {
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: none;
+  background: #050b1b;           /* círculo oscuro */
+  display: flex;
+  flex-direction: column;        /* las rayas una debajo de otra */
+  justify-content: center;
+  align-items: center;
+  gap: 4px;                      /* separación entre rayas */
+  cursor: pointer;
+}
+
+.mobile-menu-toggle span {
+  width: 18px;
+  height: 2px;
+  background: #ffffff;           /* rayas blancas */
+  border-radius: 999px;
+  display: block;
+}
+{
+    display: block;
+    width: 18px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 999px;
+    margin: 2px 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+  }
+
+  /* Menú desplegable */
+  .mobile-header.menu-open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    inset: 0;
+    background: #020617;
+    padding-top: 120px;
+    padding-bottom: 40px;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 999;
+  }
+
+  .mobile-header.menu-open .mobile-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .mobile-header.menu-open .mobile-menu a:hover {
+    opacity: 0.8;
+  }
+
+  /* Animación icono hamburguesa → X */
+  .mobile-header.menu-open .mobile-menu-toggle span:nth-child(1) {
+    transform: translateY(4px) rotate(45deg);
+  }
+
+  .mobile-header.menu-open .mobile-menu-toggle span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-header.menu-open .mobile-menu-toggle span:nth-child(3) {
+    transform: translateY(-4px) rotate(-45deg);
+  }
+
+  /* Más aire arriba para el hero en móvil */
+  .hero {
+    padding-top: 140px;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .section-inner {
+    border-radius: 28px;
+    padding: 30px 24px 34px;
+  }
+}

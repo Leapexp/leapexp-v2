@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog – Leap</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- HEADER con el mismo menú -->
+ <header class="site-header">
+  <!-- Versión ESCRITORIO/TABLET -->
+  <div class="nav-shell desktop-header">
+    <a class="brand" href="index.html" aria-label="Leap English">
+      <img class="brand-logo" src="logo.png" alt="Leap" />
+    </a>
+    <nav class="nav">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="programas.html">Programas</a>
+      <a href="destinos.html">Destinos</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="blog.html">Blog</a>
+    </nav>
+    <a href="#contacto" class="nav-cta">Contacto</a>
+  </div>
+
+  <!-- Versión MÓVIL con menú hamburguesa -->
+  <div class="mobile-header">
+    <div class="mobile-header-bar">
+      <a class="brand" href="index.html" aria-label="Leap English">
+        <img class="brand-logo" src="logo.png" alt="Leap" />
+      </a>
+      <button
+        class="mobile-menu-toggle"
+        aria-label="Abrir menú"
+        onclick="document.querySelector('.mobile-header').classList.toggle('menu-open')"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" aria-label="Menú principal móvil">
+      <a href="#inicio">Inicio</a>
+      <a href="programas.html">Programas</a>
+      <a href="destinos.html">Destinos</a>
+      <a href="sobre-nosotros.html">Sobre nosotros</a>
+      <a href="blog.html">Blog</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+  <main>
+    <!-- HERO BLOG -->
+    <section class="section">
+      <div class="section-inner">
+        <h1>Blog de Leap</h1>
+        <p class="section-lead">
+          Guías, consejos y experiencias reales para preparar tu viaje de estudios
+          de inglés al extranjero.
+        </p>
+      </div>
+    </section>
+
+    <!-- LISTA DE ARTÍCULOS (placeholder) -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <h2>Últimos artículos</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>Cómo elegir destino para estudiar inglés</h3>
+            <p>
+              Irlanda, Malta o Reino Unido: comparamos precios, ambiente y opciones
+              para ayudarte a decidir.
+            </p>
+            <p><strong>Próximamente</strong></p>
+          </article>
+
+          <article class="card">
+            <h3>Checklist antes de irte a estudiar al extranjero</h3>
+            <p>
+              Documentación, seguro médico, alojamiento, dinero… todo lo que debes
+              revisar antes de subirte al avión.
+            </p>
+            <p><strong>Próximamente</strong></p>
+          </artic
